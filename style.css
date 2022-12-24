@@ -1,0 +1,191 @@
+.description,
+.images,
+.about,
+.follow,
+.specification,
+.content_included {
+  margin-bottom: 50px;
+}
+
+.description_content,
+.follow_list,
+.spec_content,
+.included_content,
+.buy {
+  padding: 20px;
+  background-color: #131313;
+  border-radius: 4px;
+}
+
+.image_content {
+  display: flex;
+  row
+}
+
+.column_about {
+  margin-bottom: 40px;
+}
+
+.column_abt {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.col_abt1,
+.col_abt2,
+.col_abt3,
+.col_abt4 {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 20px;
+  border-left: 1px solid #202122;
+  width: 100%;
+  min-width: auto;
+}
+
+.follow_list {
+  list-style: none;
+  display: flex;
+  list-style-type: none;
+  flex-flow: row nowrap;
+  position: relative;
+  place-content: center;
+}
+
+.follow_item {
+  margin: 10px 20px;
+  width: 30px;
+}
+
+.follow_link {
+  height: 100%;
+  width: 100%;
+}
+
+.follow_icon {
+  filter: invert(62%) sepia(10%) saturate(192%) hue-rotate(230deg) brightness(90%) contrast(89%);
+}
+
+.spec_column {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.spec_col1,
+.spec_col2 {
+  margin-bottom: 25px;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.spec_item {
+  margin: 20px 0;
+}
+
+.download_game,
+.download_update,
+.download_online {
+  margin-bottom: 30px;
+}
+
+.button {
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 15px;
+  padding: 0px 20px;
+  height: 50px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media (max-width: 699px) {
+  .buy {
+    position: relative;
+    padding: 0;
+  }
+
+  .buy_img {
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .buy_text {
+    margin: 20px;
+    padding-bottom: 20px;
+  }
+
+  .buy_p {
+    margin-bottom: 30px;
+  }
+
+  .buy_btn {
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 15px;
+    padding: 0px 20px;
+    height: 50px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: red;
+  }
+}
+  
+@media (min-width: 700px) {
+  .buy {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    height: 250px;
+  }
+
+  .buy_img {
+    width: 50%;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .buy_text {
+    width: 50%;
+    margin: 20px;
+  }
+  
+  .buy_p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .buy_btn {
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 15px;
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: red;
+  }
+}
