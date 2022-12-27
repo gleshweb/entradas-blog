@@ -1,51 +1,67 @@
 .description,
-.images,
+.image,
 .about,
 .follow,
-.specification,
-.content_included {
+.spec,
+.content-included {
   margin-bottom: 50px;
 }
 
-.description_content,
-.follow_list,
-.spec_content,
-.included_content,
-.buy {
+.description__content,
+.follow__list,
+.spec__content,
+.content-included__content,
+.buy__content {
   padding: 20px;
   background-color: #131313;
   border-radius: 4px;
 }
 
-.image_content {
-  display: flex;
-  row
+.image__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-.column_about {
+.image__item {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.about__content {
   margin-bottom: 40px;
 }
 
-.column_abt {
+.about__container {
+  position: relative;
+  display: block;
+}
+.about__box {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  margin-bottom: 20px;
+  flex-direction: column;
+}
+.about__package {
+  display: flex;
+  flex-direction: row;
+}
+.about__items {
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+.about__items-title {
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.about__items-content {
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.about__package+.about__package {
+  margin-top: 20px;
 }
 
-.col_abt1,
-.col_abt2,
-.col_abt3,
-.col_abt4 {
-  display: flex;
-  flex-flow: column wrap;
-  padding: 0 20px;
-  border-left: 1px solid #202122;
-  width: 100%;
-  min-width: auto;
-}
-
-.follow_list {
+.follow__list {
   list-style: none;
   display: flex;
   list-style-type: none;
@@ -54,40 +70,58 @@
   place-content: center;
 }
 
-.follow_item {
+.follow__item {
   margin: 10px 20px;
   width: 30px;
 }
 
-.follow_link {
+.follow__link {
   height: 100%;
   width: 100%;
 }
 
-.follow_icon {
+.follow__icon {
   filter: invert(62%) sepia(10%) saturate(192%) hue-rotate(230deg) brightness(90%) contrast(89%);
 }
 
-.spec_column {
+.spec__container {
+  position: relative;
+  display: block;
+}
+.spec__box {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
+  flex-direction: column;
+}
+.spec__package {
+  display: flex;
+  flex-direction: row;
+}
+.spec__items {
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+.spec__package-r {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.spec__items-title {
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.spec__items-content {
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.spec__package+.spec__package {
+  margin-top: 20px;
 }
 
-.spec_col1,
-.spec_col2 {
-  margin-bottom: 25px;
-  margin-right: 10px;
-  width: 50%;
-}
-
-.spec_item {
-  margin: 20px 0;
-}
-
-.download_game,
-.download_update,
-.download_online {
+.download-game,
+.download-update,
+.download-online {
   margin-bottom: 30px;
 }
 
@@ -109,27 +143,27 @@
 }
 
 @media (max-width: 699px) {
-  .buy {
+  .buy__content {
     position: relative;
     padding: 0;
   }
 
-  .buy_img {
+  .buy__img {
     border-radius: 4px 4px 0 0;
     margin: 0;
     width: 100%;
   }
 
-  .buy_text {
+  .buy__text {
     margin: 20px;
     padding-bottom: 20px;
   }
 
-  .buy_p {
+  .buy__p {
     margin-bottom: 30px;
   }
 
-  .buy_btn {
+  .buy__btn {
     letter-spacing: 0.5px;
     font-weight: 500;
     border-radius: 4px;
@@ -148,7 +182,7 @@
 }
   
 @media (min-width: 700px) {
-  .buy {
+  .buy__content {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -156,23 +190,23 @@
     height: 250px;
   }
 
-  .buy_img {
+  .buy__img {
     width: 50%;
     margin: 0;
     border-radius: 4px 0 0 4px;
   }
 
-  .buy_text {
+  .buy__text {
     width: 50%;
     margin: 20px;
   }
   
-  .buy_p {
+  .buy__p {
     margin-top: 30px;
     margin-bottom: 40px;
   }
 
-  .buy_btn {
+  .buy__btn {
     letter-spacing: 0.5px;
     font-weight: 500;
     border-radius: 4px;
