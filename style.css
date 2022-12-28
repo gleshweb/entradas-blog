@@ -3,42 +3,28 @@
 .about,
 .follow,
 .spec,
-.content-included {
+.included {
   margin-bottom: 50px;
+  display: block;
+  position: relative;
 }
-
-.description__content,
-.follow__list,
-.spec__content,
-.content-included__content,
+.description__container,
+.follow__container,
+.spec__container,
+.included__container,
 .buy__content {
   padding: 20px;
   background-color: #131313;
   border-radius: 4px;
 }
-
-.image__box {
+.image__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 8px;
 }
-
-.image__item {
+.image__img {
   width: 100%;
   border-radius: 4px;
-}
-
-.about__content {
-  margin-bottom: 40px;
-}
-
-.about__container {
-  position: relative;
-  display: block;
-}
-.about__box {
-  display: flex;
-  flex-direction: column;
 }
 .about__package {
   display: flex;
@@ -48,10 +34,13 @@
   flex-basis: calc(50% - 10px);
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #202122;
+  padding: 0 20px;
 }
 .about__items-title {
   line-height: 20px;
   letter-spacing: 0.2px;
+  color:  #ffffff;
 }
 .about__items-content {
   line-height: 20px;
@@ -60,35 +49,29 @@
 .about__package+.about__package {
   margin-top: 20px;
 }
-
 .follow__list {
   list-style: none;
   display: flex;
   list-style-type: none;
   flex-flow: row nowrap;
-  position: relative;
   place-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-
 .follow__item {
   margin: 10px 20px;
   width: 30px;
 }
-
 .follow__link {
   height: 100%;
   width: 100%;
 }
-
 .follow__icon {
   filter: invert(62%) sepia(10%) saturate(192%) hue-rotate(230deg) brightness(90%) contrast(89%);
 }
-
-.spec__container {
-  position: relative;
-  display: block;
-}
-.spec__box {
+.spec__content {
   display: flex;
   flex-direction: column;
 }
@@ -96,7 +79,7 @@
   display: flex;
   flex-direction: row;
 }
-.spec__items {
+.spec__item {
   flex-basis: calc(50% - 10px);
   display: flex;
   flex-direction: column;
@@ -107,26 +90,30 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.spec__items-title {
+.spec__item-title {
   line-height: 20px;
   letter-spacing: 0.2px;
+  color:  #ffffff;
 }
-.spec__items-content {
+.spec__item-content {
   line-height: 20px;
   letter-spacing: 0.2px;
 }
 .spec__package+.spec__package {
   margin-top: 20px;
 }
-
-.download-game,
-.download-update,
-.download-online {
-  margin-bottom: 30px;
+.download {
+  margin-bottom: 50px;
 }
-
+.download__content {
+  display: grid;
+  row-gap: 30px;
+}
+.download-game__button {
+  display: grid;
+  row-gap: 5px;
+}
 .button {
-  margin-bottom: 5px;
   letter-spacing: 0.5px;
   font-weight: 500;
   border-radius: 4px;
@@ -138,8 +125,23 @@
   padding: 0px 20px;
   height: 50px;
   display: flex;
-  color: rgb(255, 255, 255);
   text-decoration: none;
+  color:  #ffffff;
+}
+.button--bg_0 {
+  background-color: #3253bc;
+}
+.button--bg_1 {
+  background-color: #ff3323;
+}
+.button--bg_2 {
+  background-color: #2a86db;
+}
+.button--bg_3 {
+  background-color: #3253bc;
+}
+.button--bg_4 {
+  background-color: #6dab3c;
 }
 
 @media (max-width: 699px) {
